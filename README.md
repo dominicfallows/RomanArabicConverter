@@ -6,4 +6,4 @@ At the moment this is a Visual Studio 2013 console application project, debug ru
 ## License
 The MIT License (MIT).
 
-Copyright (c) 2015 Dominic Fallows.
+Copyright (c) 2015 Dominic Fallows
