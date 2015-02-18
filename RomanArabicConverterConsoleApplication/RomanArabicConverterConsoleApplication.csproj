@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -75,15 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="publish\Application Files\ConsoleApplication1_1_0_0_0\ConsoleApplication1.application" />
-    <None Include="publish\Application Files\ConsoleApplication1_1_0_0_0\ConsoleApplication1.exe.config.deploy" />
-    <None Include="publish\Application Files\ConsoleApplication1_1_0_0_0\ConsoleApplication1.exe.deploy" />
-    <None Include="publish\Application Files\ConsoleApplication1_1_0_0_0\ConsoleApplication1.exe.manifest" />
-    <None Include="publish\Application Files\RomanArabicConverterConsoleApplication_1_0_0_1\RomanArabicConverterConsoleApplication.application" />
-    <None Include="publish\Application Files\RomanArabicConverterConsoleApplication_1_0_0_1\RomanArabicConverterConsoleApplication.exe.config.deploy" />
-    <None Include="publish\Application Files\RomanArabicConverterConsoleApplication_1_0_0_1\RomanArabicConverterConsoleApplication.exe.deploy" />
-    <None Include="publish\Application Files\RomanArabicConverterConsoleApplication_1_0_0_1\RomanArabicConverterConsoleApplication.exe.manifest" />
-    <None Include="publish\RomanArabicConverterConsoleApplication.application" />
     <None Include="RomanArabicConverterConsoleApplication_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -102,9 +94,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="publish\setup.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
