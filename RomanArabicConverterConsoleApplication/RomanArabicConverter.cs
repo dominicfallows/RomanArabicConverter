@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RomanArabicConverter
 {
@@ -23,16 +20,16 @@ namespace RomanArabicConverter
         {
             if (inputNumber > 3999)
             {
-                return "Roman numerals can only go upto 3999 usig I-M keys";
+                return "Roman numerals can only go up to 3999 (using only IVXLCDM numerals)";
             }
 
             string outputString = "";
             int remainingNumber = inputNumber;
 
             // First we deal with the thousands
-            int thousands = remainingNumber / 1000; //how many thousands do we have? 
-            remainingNumber -= (thousands * 1000); //remove the value of the number of thousands from remaming to use later
-            while (thousands > 0) //loop through the thousands and add the roman numeral to the output string
+            int thousands = remainingNumber / 1000; // Calculate the number of thousands 
+            remainingNumber -= (thousands * 1000); // Remove the numerical value of the number of thousands from the remaining number
+            while (thousands > 0) // Loop through the thousands and add the roman numeral to the output string
             {
                 outputString += 'M';
                 thousands--;
@@ -53,18 +50,6 @@ namespace RomanArabicConverter
             
             return outputString;
 
-        }
-
-        static int[] SplitIntToArray(int num)
-        {
-            List<int> listOfInts = new List<int>();
-            while (num > 0)
-            {
-                listOfInts.Add(num % 10);
-                num = num / 10;
-            }
-            listOfInts.Reverse();
-            return listOfInts.ToArray();
         }
 
         static string HandleDigits(int numOf, string type) {
@@ -95,7 +80,6 @@ namespace RomanArabicConverter
             
             while (numOf > 0)
             {
-
                 if (numOf == 9)
                 {
                     outputString += digits[9];
@@ -119,6 +103,18 @@ namespace RomanArabicConverter
             }
             return outputString;
         }
- 
+
+        /* static int[] SplitIntToArray(int num)
+        {
+            List<int> listOfInts = new List<int>();
+            while (num > 0)
+            {
+                listOfInts.Add(num % 10);
+                num = num / 10;
+            }
+            listOfInts.Reverse();
+            return listOfInts.ToArray();
+        } */
+
     }
 }
